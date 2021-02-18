@@ -1,0 +1,5 @@
+docker buildx build --platform linux/amd64 --push -t craigham/apmonitor .
+
+docker run --rm -d --name apmonitor -p 8083:80 craigham/apmonitor
+
+
